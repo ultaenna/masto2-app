@@ -25,7 +25,8 @@
           %span= t 'about.domain_count_after'
 
       - unless @instance_presenter.site_extended_description.blank?
-        .panel= @instance_presenter.site_extended_description.html_safe
+        /.panel= @instance_presenter.site_extended_description.html_safe
+        .panel= image_tag 'help.jpg'
 
     .sidebar
       = render partial: 'contact', object: @instance_presenter
