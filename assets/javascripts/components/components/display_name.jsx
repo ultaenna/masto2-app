@@ -12,7 +12,8 @@ const DisplayName = React.createClass({
   mixins: [PureRenderMixin],
 
   render () {
-    const displayName     = this.props.account.get('display_name').length === 0 ? this.props.account.get('username') : this.props.account.get('display_name');
+    // const displayName     = this.props.account.get('display_name').length === 0 ? this.props.account.get('username') : this.props.account.get('display_name');
+    const displayName     = '';
     const displayNameHTML = { __html: emojify(escapeTextContentForBrowser(displayName)) };
 
     return (
