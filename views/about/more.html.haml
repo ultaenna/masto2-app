@@ -24,9 +24,13 @@
           %strong= number_with_delimiter @instance_presenter.domain_count
           %span= t 'about.domain_count_after'
 
+      %p testtest
+
       - unless @instance_presenter.site_extended_description.blank?
-        /.panel= @instance_presenter.site_extended_description.html_safe
-        .panel= image_tag 'help.jpg'
+        %p testtest2
+        -# .panel= @instance_presenter.site_extended_description.html_safe
+        .panel
+          .help= image_tag 'help.jpg'
 
     .sidebar
       = render partial: 'contact', object: @instance_presenter
